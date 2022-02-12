@@ -57,6 +57,12 @@ img {
 
 /* ОФОРМЛЕНИЕ ХЕДЕРА */
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 80px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
