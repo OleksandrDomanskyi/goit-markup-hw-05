@@ -150,8 +150,20 @@ img {
   fill: var(--accent-color);
 }
 
-.site-nav .link.current {
+.link.current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.link.current::before {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 0;
 }
 
 /* ОФОРМЛЕНИЕ МЭЙНА */
@@ -269,16 +281,43 @@ img {
   margin-bottom: 0;
 }
 
-.examples-list .item {
+.examples-list .examples-item-container {
   margin-right: 30px;
 }
 
-.examples-list .item:last-child {
+.examples-list .examples-item-container:last-child {
   margin-right: 0;
 }
 
 .examples-list img {
   display: block;
+}
+
+.examples-item-container {
+  position: relative;
+  display: flex;
+}
+
+.examples-list-container {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  min-height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  align-items: center;
+}
+
+.examples-list-container p {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 .team-title {
