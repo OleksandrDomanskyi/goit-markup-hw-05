@@ -328,11 +328,11 @@ img {
   margin-bottom: 0;
 }
 
-.examples-list .examples-item-container {
+.examples-list .item {
   margin-right: 30px;
 }
 
-.examples-list .examples-item-container:last-child {
+.examples-list .item:last-child {
   margin-right: 0;
 }
 
@@ -340,7 +340,7 @@ img {
   display: block;
 }
 
-.examples-item-container {
+.examples-list .item {
   position: relative;
   display: flex;
 }
